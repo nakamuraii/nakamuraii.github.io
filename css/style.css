@@ -609,9 +609,46 @@ header {
   transform: scale(1.1);
 }
 
+.mobile-menu{
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  z-index: 300;
+  transition: all 0.3s ease-in-out;
+}
 
+.mobile-menu__list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 
+.mobile-menu span {
+  cursor: pointer;
+  font-size: 3.3rem;
+  position: absolute;
+  right: 2rem;
+  top: 0.6rem;
+}
 
+.open-menu {
+  left: 0!important;
+}
+
+.closed-menu {
+  left: -100%!important;
+}
+
+.mobile-menu__item {
+  font-size: 24px;
+  font-weight: 500;
+}
 
 
 

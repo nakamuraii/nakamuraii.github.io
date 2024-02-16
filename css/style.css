@@ -435,6 +435,10 @@ textarea {
   --color-gray: rgb(45, 46, 50);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Poppins, sans-serif;
@@ -455,6 +459,11 @@ a {
 
 /* Меню - контент */ 
 
+.menu-con {
+  background-color: var(--color-white);
+  box-shadow: 0 0 10px rgba(0,0,0,.09);
+}
+
 .menu {
   width: 100%;
   height: 80px;
@@ -462,7 +471,6 @@ a {
   justify-content: space-between;
   padding: 0 80px;
   background-color: var(--color-white);
-  box-shadow: 0 0 10px rgba(0,0,0,.09);
 }
 
 header {
@@ -637,6 +645,23 @@ header {
   top: 0.6rem;
 }
 
+.about {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .open-menu {
   left: 0!important;
 }
@@ -649,16 +674,6 @@ header {
   font-size: 24px;
   font-weight: 500;
 }
-
-
-
-
-
-
-
-
-
-
 
 @media (max-width: 1024px) {
   .prew-container {

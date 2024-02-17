@@ -461,17 +461,21 @@ a {
 
 .menu-con {
   background-color: var(--color-white);
-  box-shadow: 0 0 10px rgba(0,0,0,.09);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.308);
+  height: 5rem;
+  position: fixed;
+  width: 100%;
+  z-index: 300;
 }
 
 .menu {
   width: 100%;
-  height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 0 80px;
   background-color: var(--color-white);
   z-index: 300;
+  height: 5rem;
 }
 
 header {
@@ -534,7 +538,7 @@ header {
 }
 
 .prew-container__total {
-  margin-top: 160px;
+  margin-top: 220px;
   display: flex;
   gap: 80px;
 }
@@ -579,6 +583,18 @@ header {
   gap: 20px;
 }
 
+.prew-container__links a svg {
+  transition: all .15s;
+  color: rgb(0, 0, 0);
+  fill: rgb(0, 0, 0);
+}
+
+.prew-container__links a svg:hover {
+  transform: scale(1.1);
+  color: rgb(20, 126, 251);
+  fill: rgb(20, 126, 251);
+}
+
 .link {
   cursor: pointer;
   transition: all 0.15s;
@@ -587,6 +603,21 @@ header {
 .prew-container__img {
   border-radius: 50%;
   border: solid 3px var(--color-black);
+  animation: morph 7s ease-in-out infinite;
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
 
 .stack-container__total {
@@ -704,7 +735,125 @@ header {
   line-height: 1.5;
 }
 
+.projects-container {
+  width: 100%;
+  padding: 9rem 0;
+}
 
+.new-projects {
+  width: 100%;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.contact-container {
+  width: 100%;
+  padding: 7rem 0;
+  background-color: var(--color-white);
+}
+
+.contact-container__total {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact__title p {
+  color: #147efb;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.contact__title h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.contact__icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rem;
+  margin-top: 4rem;
+}
+
+.contact__icon-box {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact__icon-box span {
+  height: 3.2rem;
+  width: 3.2rem;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.137);
+  justify-content: center;
+  color: rgb(20, 126, 251);
+  display: flex;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: .7rem;
+}
+
+.contact__info h3{
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.contact__info p {
+  color: rgb(118, 118, 118);
+  font-size: 1.1rem;
+  transition: all .15s;
+}
+
+.contact__info p:hover {
+  color: rgb(20, 126, 251);
+  cursor: pointer;
+}
+
+footer {
+  background-color: #2d2e32;
+  padding: 4rem 0;
+  width: 100%;
+}
+
+.footerc {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerc h3 {
+  color: var(--color-white);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.footerc__socials {
+  display: flex;
+  gap: 2rem;
+}
+
+.footerc__socials a svg {
+  color: var(--color-white);
+  fill: var(--color-white);
+  transition: all .15s;
+}
+
+.footerc__socials a svg:hover {
+  transform: scale(1.1);
+  color: rgb(20, 126, 251);
+  fill: rgb(20, 126, 251);
+}
 
 
 
@@ -816,6 +965,10 @@ header {
     width: 300px;
   }
 
+  .about-container {
+    padding: 3rem 0;
+  }
+
   .about-container__total {
     flex-direction: column;
     padding: 0 1rem;
@@ -839,5 +992,49 @@ header {
 
   .text-side h4 {
     font-size: 1.5rem;
+  }
+
+  .projects-container {
+    padding: 6rem 0;
+  }
+
+  .new-projects {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 0 .5rem;
+  }
+
+  .contact-container {
+    padding: 5rem 0;
+  }
+
+  .contact-container__total {
+    align-items: center;
+  }
+
+  .contact__title {
+    text-align: center;
+  }
+
+  .contact__icons {
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  .contact__icon-box {
+    flex-direction: column;
+  }
+
+  .contact__info {
+    text-align: center;
+  }
+
+  .footerc {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footerc__socials {
+    margin-top: 2rem;
   }
 }

@@ -471,6 +471,7 @@ a {
   justify-content: space-between;
   padding: 0 80px;
   background-color: var(--color-white);
+  z-index: 300;
 }
 
 header {
@@ -537,7 +538,6 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 28px;
   flex-wrap: wrap;
 }
@@ -545,6 +545,8 @@ header {
 .prew-container__title {
   font-size: 50px;
   font-weight: 900;
+  min-height: 100px;
+  text-align: left;
 }
 
 .cursor {
@@ -714,10 +716,13 @@ header {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.1;
+    text-align: center;
+    min-height: 80px;
   }
 
   .prew-container__info {
     text-align: center;
+    align-items: center;
   }
   
   .prew-container__desc {

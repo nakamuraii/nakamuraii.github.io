@@ -16,12 +16,12 @@ function closeMenu() {
 const textToType = "Front-End React Developer";
 const typedTextElement = document.getElementById("typed-text");
 
-let typingSpeed = 65;
+let typingSpeed = 40;
 let screedWidth = window.innerWidth;
 let currentIndex = 0;
  
 if (screedWidth <= 607) {
-    typingSpeed = 45;
+    typingSpeed = 35;
 }
 
 function typeText() {

@@ -456,6 +456,14 @@ a {
   margin: 0 auto;
 }
 
+section {
+  position: relative;
+}
+
+.anchor {
+  position: absolute;
+  top: -70px;
+}
 
 /* Меню - контент */ 
 

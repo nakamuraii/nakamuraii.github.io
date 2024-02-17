@@ -809,13 +809,13 @@ header {
   font-size: 1.1rem;
 }
 
-.contact__info p {
+.contact__info a {
   color: rgb(118, 118, 118);
   font-size: 1.1rem;
   transition: all .15s;
 }
 
-.contact__info p:hover {
+.contact__info a:hover {
   color: rgb(20, 126, 251);
   cursor: pointer;
 }

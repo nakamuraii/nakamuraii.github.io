@@ -1034,6 +1034,7 @@ footer {
   .text-side {
     padding: 0 0.3rem;
     text-align: center;
+    width: 100%;
   }
 
   .text-side h4 {

@@ -3,6 +3,23 @@ const closeBtn = document.querySelector('.closeButton');
 const mobileMenu = document.getElementById('mobileMenu');
 const mobileLinks = document.querySelectorAll('.closeButton.menu__link');
 
+function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+       change.target.classList.add('element-show');
+      }
+    });
+}
+  
+let options = {
+  threshold: [0.3] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+  
+for (let elm of elements) {
+  observer.observe(elm);
+}
+
 function showMenu() {
     mobileMenu.classList.remove('closed-menu')
     mobileMenu.classList.add('open-menu')

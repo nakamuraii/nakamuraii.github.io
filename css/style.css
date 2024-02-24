@@ -887,6 +887,19 @@ footer {
   font-weight: 500;
 }
 
+
+.element-animation {  
+  opacity: 0;
+  transform: translateY(15px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.1s;
+  transform: translateY(0%);
+}
+
+
 @media (max-width: 1024px) {
   .prew {
     width: 100%;

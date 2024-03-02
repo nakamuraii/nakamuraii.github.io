@@ -181,6 +181,17 @@
 
   .contacts__item {
     display: none;
+    padding: 0;
+    max-width: 220px;
+
+    svg {
+      min-width: 55px;
+    }
+  }
+
+  .contacts__items {
+    margin: 0 auto;
+    max-width: 220px;
   }
 
   .contacts__slide-prev-button, .contacts__slide-next-button {
@@ -204,9 +215,14 @@
   }
 
   .contacts__text {
+    gap: 2px;
     h2 {
-      font-size: 22px;
+      font-size: 20px;
       color: $style-color;
+    }
+
+    p {
+      font-size: 12px;
     }
   }
 

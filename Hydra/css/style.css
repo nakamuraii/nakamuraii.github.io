@@ -1445,6 +1445,7 @@ button {
 input, textarea {
   font-family: Montserrat, sans-serif;
   color: #ffffff;
+  resize: none;
 }
 
 a {
@@ -1625,6 +1626,15 @@ a {
   }
   .contacts__item {
     display: none;
+    padding: 0;
+    max-width: 220px;
+  }
+  .contacts__item svg {
+    min-width: 55px;
+  }
+  .contacts__items {
+    margin: 0 auto;
+    max-width: 220px;
   }
   .contacts__slide-prev-button, .contacts__slide-next-button {
     display: -webkit-box;
@@ -1651,9 +1661,15 @@ a {
   .border {
     border: none;
   }
+  .contacts__text {
+    gap: 2px;
+  }
   .contacts__text h2 {
-    font-size: 22px;
+    font-size: 20px;
     color: #c0b7e8;
+  }
+  .contacts__text p {
+    font-size: 12px;
   }
   .about__content-sub {
     gap: 50px;

@@ -487,7 +487,7 @@ textarea {
 
 .header__illustration {
   border-radius: 100px 100px 100px 240px;
-  background-image: url("/img/header-illustration.png");
+  background-image: url("../img/header-illustration.png");
   background-position: -30px -70px;
   min-width: 490px;
   min-height: 426px;
@@ -589,7 +589,7 @@ textarea {
   position: absolute;
   width: 1440px;
   height: 100%;
-  background-image: url("/img/svg/about-bg.svg");
+  background-image: url("../img/svg/about-bg.svg");
   background-repeat: no-repeat;
   top: 240px;
   left: calc(50% - 720px);
@@ -657,7 +657,7 @@ textarea {
   margin-bottom: 100px;
 }
 .about__content-sub .about__image {
-  background-image: url("/img/about-img.png");
+  background-image: url("../img/about-img.png");
   border-radius: 240px 100px 240px 100px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -727,7 +727,7 @@ textarea {
   position: absolute;
   width: 1440px;
   height: 820px;
-  background-image: url("/img/svg/feel-bg.svg");
+  background-image: url("../img/svg/feel-bg.svg");
   background-repeat: no-repeat;
   top: 60px;
   left: calc(50% - 720px);
@@ -860,7 +860,7 @@ textarea {
 
 .process {
   width: 100%;
-  background-image: url("/img/svg/steps-bg.svg");
+  background-image: url("../img/svg/steps-bg.svg");
   background-repeat: no-repeat;
   background-position: center 210px;
 }
@@ -1018,7 +1018,7 @@ textarea {
   width: 100%;
   height: 303px;
   margin-bottom: 55px;
-  background-image: url("/img/banner-img.png");
+  background-image: url("../img/banner-img.png");
   border-radius: 160px;
   -webkit-box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
           box-shadow: 0px 4px 4px 0px rgba(192, 183, 232, 0.01);
@@ -1407,6 +1407,10 @@ footer {
   letter-spacing: 2px;
 }
 
+.feel__container-prev-button, .feel__container-next-button, .engines__container-prev-button, .engines__container-next-button, .process__steps-prev-button, .process__steps-next-button {
+  display: none;
+}
+
 .main {
   width: 100%;
   margin-top: 100px;
@@ -1417,7 +1421,7 @@ footer {
   position: absolute;
   width: 1440px;
   height: 100%;
-  background-image: url("/img/svg/header-bg.svg");
+  background-image: url("../img/svg/header-bg.svg");
   background-repeat: no-repeat;
   top: -300px;
   left: calc(50% - 700px);
@@ -1800,6 +1804,9 @@ a {
   }
   .process__step h3 {
     width: 90%;
+    -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+            transform: translateX(10px);
   }
   .process__steps-prev-button, .process__steps-next-button {
     position: absolute;

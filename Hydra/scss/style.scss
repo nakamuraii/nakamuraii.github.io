@@ -25,6 +25,8 @@ body {
 
 button {
   font-family: Montserrat, sans-serif;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 input, textarea {
@@ -42,5 +44,24 @@ a {
   padding: 0 84px;
   margin: 0 auto;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #242131;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aa9de4; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8a78db; 
+}
+
 
 @import "blocks/_mobile";

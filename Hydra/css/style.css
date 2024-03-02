@@ -1438,6 +1438,8 @@ body {
 
 button {
   font-family: Montserrat, sans-serif;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 input, textarea {
@@ -1454,6 +1456,24 @@ a {
   max-width: 1440px;
   padding: 0 84px;
   margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #242131;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #aa9de4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8a78db;
 }
 
 @media only screen and (max-width: 1490px) {
@@ -1485,6 +1505,9 @@ a {
   }
   .feel__item p {
     font-size: 16px;
+  }
+  .feel__item .feel__item-img {
+    width: 175px;
   }
   .feel__item button {
     width: 174px;
@@ -1737,7 +1760,7 @@ a {
     width: 100%;
     height: 164px;
     border-radius: 60px;
-    background-size: 190%;
+    background-size: 194%;
     background-position: -140px;
   }
   .tech__container button {
@@ -1957,6 +1980,27 @@ a {
 @media only screen and (max-width: 380px) {
   .header__illustration {
     background-position: 50% -30px;
+  }
+  .tech__container {
+    background-size: 235%;
+  }
+  .header__title-ftext {
+    font-size: 24px;
+  }
+  .header__title-ftext .ft1 {
+    font-size: 28px;
+  }
+  .header__title-stext {
+    font-size: 24px;
+  }
+  .header__title-stext .ft2 {
+    font-size: 28px;
+  }
+  .contacts__slide-prev-button {
+    right: 83%;
+  }
+  .contacts__slide-next-button {
+    left: 83%;
   }
 }
 @-webkit-keyframes fadeIn {

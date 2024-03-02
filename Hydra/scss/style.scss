@@ -1,0 +1,44 @@
+@import "base/_fonts";
+@import "base/_reset";
+@import "base/_vars";
+
+@import "blocks/_menu";
+@import "blocks/_header";
+@import "blocks/_contacts";
+@import "blocks/_about";
+@import "blocks/_feel";
+@import "blocks/_engines";
+@import "blocks/_process";
+@import "blocks/_tech";
+@import "blocks/_contact-form";
+@import "blocks/_footer";
+@import "blocks/_main";
+
+body {
+  margin: 0;
+  background-color: $background-color;
+  font-family: Montserrat, sans-serif;
+  color: $white-color;
+}
+
+button {
+  font-family: Montserrat, sans-serif;
+}
+
+input, textarea {
+  font-family: Montserrat, sans-serif;
+  color: $white-color;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-links);
+}
+
+.wrapper {
+  max-width: 1440px;
+  padding: 0 84px;
+  margin: 0 auto;
+}
+
+@import "blocks/_mobile";

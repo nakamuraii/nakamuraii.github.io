@@ -820,16 +820,20 @@ textarea {
   background: linear-gradient(90deg, rgb(146, 137, 182), rgb(200, 193, 235) 100%);
 }
 
-.feel__item:nth-child(2) .feel__item-img {
+.feel__item:nth-child(3) .feel__item-img {
+  background-position: 0px 0%;
+  background-size: 100%;
+}
+.feel__item:nth-child(4) .feel__item-img {
   background-position: -80px 30%;
   background-size: 180%;
 }
-.feel__item:nth-child(3) .feel__item-img {
+.feel__item:nth-child(5) .feel__item-img {
   background-position: -20px 50%;
   background-size: 120%;
 }
-.feel__item:nth-child(4) .feel__item-img {
-  background-position: -65px 30%;
+.feel__item:nth-child(6) .feel__item-img {
+  background-position: -110px 30%;
   background-size: 210%;
 }
 

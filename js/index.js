@@ -4,9 +4,9 @@ const sortButton = document.getElementById('button');
 let sleepTime;
 let sortingInProgress = false;
 
-const data = Array.from({ length: 190 }, (_, index) => index);
+let data = Array.from({ length: 190 }, (_, index) => index);
 data.shift();
-const shuffledData = shuffleArray(data);
+let shuffledData = shuffleArray(data);
 createDivsFromArray(shuffledData, container);
 
 function updateRangeValue() {
@@ -27,20 +27,28 @@ document.querySelectorAll('.range_box input').forEach(item => {
 
 function createDiv(height) {
     const div = document.createElement('div');
+    const width = window.innerWidth;
+
     div.className = 'item';
     div.style.height = height * 4 + 'px';
+    if (width < 800) {
+        div.style.height = height * 8 + 'px';
+    }
     return div;
 }
 
 function createDivsFromArray(arr, container) {
+    container.innerHTML = '';
     arr.forEach(item => {
         container.appendChild(createDiv(item));
-    });   
+    });
 }
 
 function updateDivs(arr, container) {
     container.innerHTML = '';
-    createDivsFromArray(arr, container);
+    arr.forEach(item => {
+        container.appendChild(createDiv(item));
+    });
 }
 
 async function bubbleSort(arr, container, sleepTime) {
@@ -78,4 +86,12 @@ sortButton.addEventListener('click', () => {
         bubbleSort(shuffledData.slice(), container, sleepTime);
         sortingInProgress = true;
     }
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const width = window.innerWidth;
+    if (width < 800) {
+        shuffledData = shuffleArray(Array.from({ length: 60 }, (_, index) => index));
+    }
+    updateDivs(shuffledData, container);
 });

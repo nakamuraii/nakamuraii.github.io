@@ -1,0 +1,94 @@
+/* amiko-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/amiko-v14-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* amiko-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Amiko';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/amiko-v14-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+* {
+    font-family: Amiko, sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+body {
+  background-color: rgb(19, 19, 19);
+  color: white;
+}
+
+.container {
+  display: flex;
+}
+
+.item {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 14px 28px rgba(255, 255, 255, 0.075), 0 10px 10px rgba(255, 255, 255, 0.103);
+}
+
+.sort-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.sort-container button {
+  width: 150px;
+  height: 40px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.103);
+  border: none;
+  cursor: pointer;
+}
+
+input[type=range] {
+  position: relative;
+  -webkit-appearance: none; /* убираем стандартные стили для WebKit (Chrome, Safari, etc.) */
+  border-radius: 10px; /* скругляем углы */
+  width: 200px;
+  height: 7px;
+  border-radius: 10px;
+  background-color: white;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 10px 0;
+  outline: none;
+}
+
+/* Стилизация ползунка */
+.range_box input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* убираем стандартные стили для WebKit (Chrome, Safari, etc.) */
+  width: 20px; /* задаем ширину */
+  height: 20px; /* задаем высоту */
+  background: rgb(168, 168, 168); /* цвет */
+  border-radius: 50%; /* скругляем углы */
+  cursor: pointer; /* меняем курсор при наведении */
+  position: relative; /* устанавливаем позицию как относительную, чтобы можно было позиционировать абсолютно */
+  z-index: 1; /* задаем z-index, чтобы ползунок оказался поверх остальных элементов */
+}
+
+.sort-container p {
+  font-size: 14px;
+  color: rgb(177, 0, 0);
+}
+
+.range_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
